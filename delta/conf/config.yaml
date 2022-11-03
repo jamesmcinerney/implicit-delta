@@ -1,0 +1,20 @@
+defaults:
+  - path: local
+  - dataset: quadratic
+  - confidence: idm #ensemble
+  - hyp: classification
+  - eval: classification
+  - override hydra/launcher: joblib
+  #- override hydra/job_logging: DEBUG
+
+
+
+# VAE settings
+weight_kl: 1.0
+weight_recon: 1.0
+obs_noise: 0.0
+obs_noise_frac: 0.0
+min_delta_loss: 0.1
+set_n_itr: 50000
+
+path_timestamp: /2022-05-18/05-49-43

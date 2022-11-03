@@ -1,0 +1,5 @@
+name: local
+
+ensemble_samples_proto_path: <path_to_output_root>
+
+data_path: <path_to_data>

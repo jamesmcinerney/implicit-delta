@@ -1,0 +1,15 @@
+defaults:
+  - dataset: sin
+  - override hydra/launcher: joblib
+  #- override hydra/job_logging: DEBUG
+
+
+
+verbose:
+  training:
+    print_every: 500
+
+path:
+  ensemble_samples_proto_path: <path_to_experiments>
+  timestamp: <path_to_experiments_subpath>
+

@@ -1,0 +1,30 @@
+name: quadratic
+
+hyp:
+  seed: 0
+  activation: tanh
+  mse_lr: 0.005
+  idm_lr: 0.0005
+  arch:
+    - 50
+    - 1
+  n_iter: 20000
+  n_iter_update: 2000
+  n_surf_steps: 2000
+  rome_eps: 1e-1
+  threshold_converge: 1e-10
+  threshold_converge_update: 1e-11
+  lambda: 1e-1
+  n_avg_w: 200
+  y_min_plt: 4
+  y_max_plt: 7
+  psi:
+    type: prediction
+    x_min: -2
+    x_max: 2
+    x_step: 0.05
+
+generate:
+  seed: 0
+  N: 25
+  obs_noise_std: 0.1

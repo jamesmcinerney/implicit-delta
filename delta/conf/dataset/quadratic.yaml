@@ -1,0 +1,55 @@
+name: quadratic
+
+hyp:
+
+  architecture:
+    - 50
+
+  loss: mse
+
+  init:
+    weights:
+      uniform_bound: 0.1
+
+  activation: tanh
+
+  optimizer:
+    type: gradient_descent
+    lr: 0.0001
+    #rome_lr: 0.0001
+
+  train:
+    batch_size: 25
+    train_stopping_size: 1000 # how many fixed examples in train set to decide stopping
+    val_sample_size: 1000 # how many samples to approx val during training
+    min_n_iter: 1000
+    max_n_iter: 20000
+    n_samples_psi: 200
+    n_iter_update: 100
+    rome_eps: 1e-2
+    seed: 0
+    threshold_converge: 1e-3
+    threshold_converge_update: 1e-11
+    max_converge_count: 3 # how many times to check for convergence before stop train
+    dropout_rate: 0.25
+
+  verbose:
+    train_print_every: 500
+    plot_fits: True
+
+  constants:
+    epsilon: 1e-6
+
+  psi:
+    type: prediction
+    x_min: -2
+    x_max: 2
+    x_step: 0.05
+
+plt:
+  y_min: 4
+  y_max: 7
+
+generate:
+  N: 25
+  obs_noise_std: 0.1

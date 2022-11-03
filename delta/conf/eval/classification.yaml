@@ -1,0 +1,7 @@
+K_folds: 10
+
+predict_alpha: 0.95
+
+eb_alpha: 0.95
+
+avg_prec_k: 3

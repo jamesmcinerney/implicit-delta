@@ -1,0 +1,11 @@
+name: ensemble
+
+
+n_samples: 50
+
+seed_start: 0
+
+max_n_samples: 1000  # as a way to separate seeds when running multiple boostraps in parallel
+
+# for post-training analysis only:
+n_seeds: 8

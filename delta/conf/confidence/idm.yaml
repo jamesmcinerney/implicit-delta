@@ -1,0 +1,7 @@
+name: idm
+
+
+n_samples: 1
+
+seed_start: 0
+n_seeds: 10
